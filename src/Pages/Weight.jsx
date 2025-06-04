@@ -49,14 +49,14 @@ const Weight = () => {
                         <LineChart data={data}>
                             <CartesianGrid strokeDasharray="3 5" />
                             <XAxis dataKey="date" />
-                            <YAxis />
+                            <YAxis domain={['dataMin - 15', 'dataMax + 15']} />
                             <Tooltip />
                             <Legend />
                             <Line type="monotone" dataKey="weight" stroke="#8884d8" />
                             <ReferenceLine
                                 label={{
-                                    value: 'Target Weight (62)',
-                                    position: 'top',
+                                    value: 'Target Weight (62 Kg)',
+                                    position: 'bottom',
                                     fill: '#000',
                                     fontSize: 12
                                 }} 
